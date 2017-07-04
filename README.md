@@ -9,6 +9,8 @@ This shell provide a REPL style EEL expression parser.
     
 The ````node```` argument will be available in the context of your EEL expression.
 
+[![asciicast](https://asciinema.org/a/oWFnjjPEtMPsK2mAh8eEBfE44.png)](https://asciinema.org/a/oWFnjjPEtMPsK2mAh8eEBfE44)
+
 ## Acknowledgments
 
 Development sponsored by [ttree ltd - neos solution provider](http://ttree.ch).
