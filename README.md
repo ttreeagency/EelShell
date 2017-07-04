@@ -1,5 +1,5 @@
 [![BSD License](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
-[![Latest Stable Version](https://poser.pugx.org/ttree/eel-shell/version)](https://packagist.org/packages/ttree/eel-shell)
+[![Latest Stable Version](https://poser.pugx.org/ttree/eelshell/version)](https://packagist.org/packages/ttree/eelshell)
 
 # A shell for EEL expressions
 
