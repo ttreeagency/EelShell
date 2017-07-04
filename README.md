@@ -5,6 +5,7 @@
 
 This shell provide a REPL style EEL expression parser.
 
+    composer require ttree/eelshell
     ./flow eel:shell --node e157515b-0fc0-443b-921c-58a630843d63
     
 The ````node```` argument will be available in the context of your EEL expression.
