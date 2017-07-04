@@ -1,0 +1,19 @@
+{
+    "name": "ttree/eelshell",
+    "description": "A shell for EEL expressions",
+    "type": "neos-package",
+    "license": "MIT",
+    "require": {
+        "neos/flow": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ttree\\EelShell\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Ttree.EelShell"
+        }
+    }
+}
