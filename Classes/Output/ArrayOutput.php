@@ -12,7 +12,7 @@ final class ArrayOutput extends NodeOutput
     /**
      * @param array $value
      */
-    public function output($value): void
+    public function output($value)
     {
         if (count($value) === 0) {
             $this->output->outputResult(' <comment>Empty result</comment>');

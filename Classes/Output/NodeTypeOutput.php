@@ -12,7 +12,7 @@ final class NodeTypeOutput extends AbstractOutput
     /**
      * @param NodeType $value
      */
-    public function output($value): void
+    public function output($value)
     {
         $this->output->outputResult('<info>NodeType:</info> %s', [$value->getName()]);
     }

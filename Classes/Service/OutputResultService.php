@@ -31,7 +31,7 @@ final class OutputResultService
         $this->registry = static::registration($this->objectManager);
     }
 
-    public function output($value, ConsoleOutput $output): void
+    public function output($value, ConsoleOutput $output)
     {
         $type = \gettype($value);
         if ($type === 'object') {
@@ -45,7 +45,7 @@ final class OutputResultService
         return isset($this->registry[$type], $this->registry[$type][0]['className']);
     }
 
-    protected function outputType(string $type, $value, ConsoleOutput $output): void
+    protected function outputType(string $type, $value, ConsoleOutput $output)
     {
         if (!$this->hasTypeSupport($type)) {
             throw new Exception(\vsprintf('Not output handler for type "%s"', [$type]), 1499164647);

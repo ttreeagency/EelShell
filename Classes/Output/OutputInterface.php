@@ -6,5 +6,5 @@ use Ttree\EelShell\ConsoleOutput;
 
 interface OutputInterface
 {
-    public function output($value): void;
+    public function output($value);
 }

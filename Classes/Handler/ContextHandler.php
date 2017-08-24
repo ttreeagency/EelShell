@@ -18,12 +18,12 @@ final class ContextHandler
      */
     protected $eelEvaluationService;
 
-    public function pushAll(array $context): void
+    public function pushAll(array $context)
     {
         $this->context = \array_merge($this->context, $context);
     }
 
-    public function push(string $name, $value): void
+    public function push(string $name, $value)
     {
         $this->context[$name] = $value;
     }
