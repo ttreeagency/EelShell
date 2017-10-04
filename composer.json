@@ -4,6 +4,7 @@
     "type": "neos-package",
     "license": "MIT",
     "require": {
+        "neos/flow": "^7.0",
         "neos/flow": "^4.0"
     },
     "autoload": {
