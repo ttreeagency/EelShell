@@ -13,7 +13,7 @@ class NodeOutput extends AbstractOutput
     /**
      * @param NodeInterface $value
      */
-    public function output($value): void
+    public function output($value)
     {
         $this->outputObjectList([
             $this->extractProperties($value)
@@ -30,7 +30,7 @@ class NodeOutput extends AbstractOutput
         ];
     }
 
-    protected function outputObjectList(array $table): void
+    protected function outputObjectList(array $table)
     {
         foreach ($table as $row) {
             $this->output->outputResult();

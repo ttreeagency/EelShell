@@ -119,7 +119,7 @@ final class Shell
         return sprintf("\${%s}", $expression);
     }
 
-    protected function handleException(\Exception $exception): void
+    protected function handleException(\Exception $exception)
     {
         $this->output->outputLine('Oups, something bad happens ...');
         $this->output->outputLine('<error>%s</error>', [$exception->getMessage()]);

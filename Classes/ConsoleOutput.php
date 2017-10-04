@@ -16,22 +16,22 @@ final class ConsoleOutput
         $this->output = $output;
     }
 
-    public function outputResult(string $result = '', array $arguments = []): void
+    public function outputResult(string $result = '', array $arguments = [])
     {
         $this->output->outputLine('// %s', [\vsprintf($result, $arguments)]);
     }
 
-    public function outputLine(string $text = '', array $arguments = []): void
+    public function outputLine(string $text = '', array $arguments = [])
     {
         $this->output->outputLine($text, $arguments);
     }
 
-    public function outputFormatted(string $text = '', array $arguments = [], int $leftPadding = 0): void
+    public function outputFormatted(string $text = '', array $arguments = [], int $leftPadding = 0)
     {
         $this->output->outputFormatted($text, $arguments, $leftPadding);
     }
 
-    public function outputQuery(array $query): void
+    public function outputQuery(array $query)
     {
         if (isset($query['command'])) {
             $this->outputResult(' <comment>Current query</comment>: %s', [$query['command']]);
@@ -48,7 +48,7 @@ final class ConsoleOutput
         }
     }
 
-    public function outputHeader(): void
+    public function outputHeader()
     {
         $this->output->outputFormatted('Welcome to the <info>EEL</info> shell');
         $this->output->outputFormatted('========================');
