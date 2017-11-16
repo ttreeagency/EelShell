@@ -24,6 +24,8 @@ class EelCommandController extends CommandController
 
     /**
      * EEL Shell (REPL)
+     *
+     * @param string $node Node identifier of the context node
      */
     public function shellCommand(string $node)
     {
