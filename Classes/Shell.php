@@ -68,7 +68,7 @@ final class Shell
             $command = trim($this->readline());
 
             if ($command === '') {
-                $this->output->outputResult('Nothing to say, nothing to do ...');
+                $this->output->outputResult('Your Oompa Loompa need more works, give them a valid command ...');
                 continue;
             }
 

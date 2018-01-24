@@ -6,6 +6,7 @@ use Neos\Flow\Exception;
 use Neos\Flow\ObjectManagement\ObjectManagerInterface;
 use Neos\Flow\Reflection\ReflectionService;
 use Neos\Utility\PositionalArraySorter;
+use Neos\Utility\TypeHandling;
 use Ttree\EelShell\ConsoleOutput;
 use Ttree\EelShell\Output\OutputInterface;
 use Ttree\EelShell\Output\ScalarOutput;
@@ -33,11 +34,7 @@ final class OutputResultService
 
     public function output($value, ConsoleOutput $output)
     {
-        $type = \gettype($value);
-        if ($type === 'object') {
-            $type = \get_class($value);
-        }
-        $this->outputType($type, $value, $output);
+        $this->outputType(TypeHandling::getTypeForValue($value), $value, $output);
     }
 
     protected function hasTypeSupport(string $type): bool
