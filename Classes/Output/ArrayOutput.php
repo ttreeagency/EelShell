@@ -21,7 +21,7 @@ final class ArrayOutput extends NodeOutput
         }
 
         $table = $this->prepareObjectList($value);
-        $this->outputObjectList($table);
+        $this->outputList($table);
     }
 
     protected function prepareObjectList(array $value): array
