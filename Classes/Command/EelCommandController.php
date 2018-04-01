@@ -27,10 +27,10 @@ class EelCommandController extends CommandController
      *
      * @param string $node Node identifier of the context node
      */
-    public function shellCommand(string $node)
+    public function shellCommand(string $node = '')
     {
         $context = $this->createContentContext('live');
-        $node = $context->getNodeByIdentifier($node);
+        $node = $node ? $context->getNodeByIdentifier($node) : $context->getRootNode();
         $context = [
             'node' => $node,
         ];
