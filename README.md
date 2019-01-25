@@ -7,8 +7,8 @@ This shell provide a REPL style EEL expression parser.
 
     composer require ttree/eelshell
     ./flow eel:shell --node e157515b-0fc0-443b-921c-58a630843d63
-    
-The ````node```` argument will be available in the context of your EEL expression.
+
+The ````node```` argument will be available in the context of your EEL expression. If not set, ````node```` will default to the root node of the `live` workspace.
 
 [![asciicast](https://asciinema.org/a/oWFnjjPEtMPsK2mAh8eEBfE44.png)](https://asciinema.org/a/oWFnjjPEtMPsK2mAh8eEBfE44)
 
